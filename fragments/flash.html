@@ -1,0 +1,9 @@
+<?php
+$_flash = $ctx->util->flash();
+if ($_flash !== null) :
+?>
+<div class="<?= $ctx->elems->layout == 'default' ? 'container' : 'container-fluid' ?> flash-wrap">
+    <div class="row text-center flash-msg"><?= $_flash ?></div>
+</div>
+<?php endif; ?>
+

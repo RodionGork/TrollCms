@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html>
+<head>
+    <base href="<?= $ctx->elems->path ?>"/>
+    <title><?= $ctx->elems->get('title', 'Кафедра ДПИ') ?></title>
+    <?php $ctx->util->fragment('metas'); ?>
+    <?php $ctx->util->fragment('cssandjs'); ?>
+</head>
+<body>
+
+    <nav class="navbar" role="navigation">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <?= $ctx->util->fragment('menu') ?>
+            </ul>
+        </div>
+    </nav>
+    
+    <?php $ctx->util->fragment('flash') ?>
+    
+    <div class="container">
+        <?= $ctx->elems->contentResult ?>
+    </div>
+</body>
+</html>
+

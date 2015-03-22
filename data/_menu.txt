@@ -1,0 +1,9 @@
+<!--format:plain-->
+
+<li>
+    <a href="./index/main">Home</a>
+</li>
+<li>
+    <a href="./index/edit">Edit</a>
+</li>
+

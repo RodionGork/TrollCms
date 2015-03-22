@@ -3,12 +3,15 @@
 <html>
 <head>
     <base href="<?= $ctx->elems->path ?>"/>
-    <title><?= $ctx->elems->get('title', 'Кафедра ДПИ') ?></title>
+    <title><?= $ctx->elems->get('title', 'Troll CMS') ?></title>
     <?php $ctx->util->fragment('metas'); ?>
     <?php $ctx->util->fragment('cssandjs'); ?>
+    <link rel="stylesheet" type="text/css" href="<?= url('styles') ?>"/>
 </head>
 <body>
-
+    
+    <?php $ctx->util->fragment('header') ?>
+    
     <nav class="navbar" role="navigation">
         <div class="container">
             <ul class="nav navbar-nav">

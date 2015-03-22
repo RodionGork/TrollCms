@@ -1,0 +1,4 @@
+<div class="row">
+    <h3>Very simple CMS</h3>
+</div>
+<a href="index/edit">Edit pages here</a>

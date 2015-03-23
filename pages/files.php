@@ -2,7 +2,8 @@
 
 <ul>
     <?php foreach ($model->files as $file) : ?>
-    <li><a href="<?= aurl('datab/' . $file) ?>"><?= $file ?></a></li>
+    <li><a href="<?= aurl('datab/' . $file) ?>"><?= $file ?></a> -
+        (<a href="<?= url('filedel', 'sure', 'yes', 'name', $file) ?>">del</a>)</li>
     <?php endforeach; ?>
 </ul>
 

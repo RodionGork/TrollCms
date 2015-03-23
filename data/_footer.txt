@@ -1,0 +1,9 @@
+<!--format:plain-->
+
+<footer class="container">
+    <hr/>
+    <div class="row">
+        (c) 2015, Here is a Footer
+    </div>
+</footer>
+

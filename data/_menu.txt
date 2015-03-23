@@ -6,4 +6,6 @@
 <li>
     <a href="./index/edit">Edit</a>
 </li>
-
+<li>
+    <a href="./index/files">Files</a>
+</li>

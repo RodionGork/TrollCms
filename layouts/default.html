@@ -22,9 +22,12 @@
     
     <?php $ctx->util->fragment('flash') ?>
     
-    <div class="container">
+    <article class="container">
         <?= $ctx->elems->contentResult ?>
-    </div>
+    </article>
+
+    <?php $ctx->util->fragment('footer') ?>
+
 </body>
 </html>
 

@@ -1,1 +1,4 @@
 /*format:plain*/
+aside {
+    border: 1px solid #999;
+}

@@ -11,3 +11,26 @@
     <input type="submit" value="Save" class="btn btn-default"/>
 </form>
 
+<script>
+var mode = '<?= $model->mode == "md" ? "markdown" : "application/x-httpd-php" ?>';
+
+$(function() {
+
+    var editable = CodeMirror.fromTextArea($('#editform textarea').get(0), {
+        lineNumbers: true,
+        matchBrackets: true,
+        mode: mode,
+        indentUnit: 4,
+        indentWithTabs: true,
+        enterMode: "keep",
+        tabMode: "shift"
+    });
+    
+    $("editform input[type=submit]").click(function() {
+        var text = editable.getValue();
+        $("#editform textarea").val(src)
+        return true;
+    });
+    
+});
+</script>

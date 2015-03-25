@@ -23,6 +23,16 @@ if (empty($name)) {
 } else {
     $model->text = $ctx->render->loadDataFilePlain($name);
     $model->name = $name;
+    $ctx->elems->scripts[] = '_cm/codemirror';
+    $ctx->elems->scripts[] = '_cm/matchbrackets';
+    if ($name[0] == '-') {
+        $model->mode = 'plain';
+    } else {
+        $ctx->elems->scripts[] = '_cm/markdown';
+        $ctx->elems->scripts[] = '_cm/xml';
+        $model->mode = 'md';
+    }
+    $ctx->elems->styles[] = 'codemirror';
     $ctx->util->changePage('editform');
 }
 

@@ -1,4 +1,9 @@
 <div class="row">
-    <h3>Very simple CMS</h3>
+
+	<div class="col-xs-8">
+    	<h3>Very simple CMS</h3>
+	</div>
+	
+	<iframe class="col-xs-3 col-xs-offset-1" src="index/p/newsblock?iframe=1" frameBorder="0" scrolling="no" seamless="seamless">
+	</iframe>
 </div>
-<a href="index/edit">Edit pages here</a>

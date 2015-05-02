@@ -19,17 +19,25 @@
             </ul>
         </div>
     </nav>
+    <?php if ($ctx->manage->isAdmin()) : ?>
+    <div class="container" style="background:#FF8">
+        <a href="<?= url('edit') ?>">Edit</a>
+        <a href="<?= url('files') ?>">Files</a>
+    </div>
+    <?php endif; ?>
     
     <?php $ctx->util->fragment('flash') ?>
     
     <div class="container">
         <div class="row">
-            <article class="col-xs-9">
+            <article class="col-xs-12">
                 <?= $ctx->elems->contentResult ?>
             </article>
+            <!--
             <aside class="col-xs-3">
                 <?= $ctx->util->fragment('aside') ?>
             </aside>
+            -->
         </div>
     </div>
 

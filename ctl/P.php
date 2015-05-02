@@ -1,6 +1,7 @@
 <?php
 
 $pageName = $ctx->util->paramGet('param');
+$isIframe = !empty($ctx->util->paramGet('iframe'));
 
 $model->text = $ctx->render->loadDataFile($pageName);
 
@@ -9,3 +10,6 @@ if ($model->text === false) {
     return;
 }
 
+if ($isIframe) {
+    $ctx->elems->layout = 'empty';
+}

@@ -12,6 +12,10 @@ class Context extends \module\sys\ProtoContext {
         return new \module\Render();
     }
     
+    protected function getManage() {
+        return new \module\Manage();
+    }
+    
     protected function getMarkdown() {
         require_once 'module/lib/Markdown_Parser.php';
         return new \Markdown_Parser();

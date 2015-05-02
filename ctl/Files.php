@@ -1,5 +1,10 @@
 <?php
 
+if (!$ctx->manage->isAdmin()) {
+    $ctx->util->redirect('main');
+    return;
+}
+
 $dir = opendir('./datab');
 $files = array();
 while (true) {

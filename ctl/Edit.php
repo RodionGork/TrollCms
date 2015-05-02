@@ -1,5 +1,10 @@
 <?php
 
+if (!$ctx->manage->isAdmin()) {
+    $ctx->util->redirect('main');
+    return;
+}
+
 $name = $ctx->util->paramGet('param');
 
 if (empty($name)) {

@@ -1,0 +1,4 @@
+{
+    "trollia": "06a4e9a81b1d9b386ef76ebdf3d49866716de8a592ec35ea7e76eb6448f5c5e6",
+    "hint for password generation": "/index/genpwd/password"
+}

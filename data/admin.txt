@@ -1,5 +1,0 @@
-###Admin functions
-
-[Edit text pages](index/edit)
-
-[Upload files](index/files)

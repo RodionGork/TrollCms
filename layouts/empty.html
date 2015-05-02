@@ -1,0 +1,22 @@
+<!doctype html>
+
+<html>
+<head>
+    <base href="<?= $ctx->elems->path ?>"/>
+    <title><?= $ctx->elems->get('title', 'Troll CMS') ?></title>
+    <?php $ctx->util->fragment('metas'); ?>
+    <?php $ctx->util->fragment('cssandjs'); ?>
+    <link rel="stylesheet" type="text/css" href="<?= url('styles') ?>"/>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <article class="col-xs-12">
+                <?= $ctx->elems->contentResult ?>
+            </article>
+        </div>
+    </div>
+
+</body>
+</html>
+

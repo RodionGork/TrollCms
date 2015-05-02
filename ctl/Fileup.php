@@ -1,5 +1,10 @@
 <?php
 
+if (!$ctx->manage->isAdmin()) {
+    $ctx->util->redirect('main');
+    return;
+}
+
 $fileInfo = $_FILES['upload'];
 $fileName = $fileInfo['name'];
 $tempFile = $fileInfo['tmp_name'];
